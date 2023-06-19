@@ -12,9 +12,9 @@ function TikiHeader() {
                 </h1>
                 <div className="gnb">
                     <ul>
-                        <li><Link to ="/company">Company</Link></li>
-                        <li><Link to ="/product">Product</Link></li>
-                        <li><Link to ="/cost">Cost</Link></li>
+                        <li><Link to ="/company">회사소개</Link></li>
+                        <li><Link to ="/product">제품소개</Link></li>
+                        <li><Link to ="/cost">요금 및 비용</Link></li>
                         <li><Link to ="/QnA">QnA</Link></li>
                     </ul>
                 </div>

@@ -6,10 +6,10 @@ function HowToJoin() {
             <Accordion.Item eventKey='0' className='howToJoin.Item'>
                 <Accordion.Header className='howToJoin.Header'>공유된 회의실 입장 방법 </Accordion.Header>
                 <Accordion.Body className='howToJoin.Body'>
-                    {/* <p className='body_text'>QR 코드 스캔</p>
+                    <p className='body_text'>1) QR 코드 스캔</p>
                     <img src='img/QR.png' className='howToImg'/>
-                     */}
-                    <p className='body_text'>URL 입력</p>
+                    
+                    <p className='body_text'>2) URL 입력</p>
                     <img src='img/useURL.png'  className='howToImg'/>
                 </Accordion.Body>
             </Accordion.Item>

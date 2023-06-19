@@ -1,15 +1,17 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import TikiMain from 'components/main/TikiMain';
 import TikiCompany from 'components/company/TikiCompany';
 import TikiProduct from 'components/product/TikiProduct';
 import TikiCost from 'components/cost/TikiCost';
-
+import QnAPage from 'components/qaPage/QnApage';
 //CSS
 import './css/base.css'
 import './css/components.css'
 import './css/layout.css'
 import './css/pages.css'
+import './css/bootstrap.min.css'
+
 
 function App() {
 
@@ -19,7 +21,7 @@ function App() {
         <Route path="/company" element={<TikiCompany/>}  />
         <Route path="/product" element={<TikiProduct/>}  />
         <Route path="/cost" element={<TikiCost/>}  />
-        {/* <Route path="/contact" component={ContactPage} /> */}
+        <Route path="/qna" element={<QnAPage/>} /> 
       </Routes>
   )
 }
