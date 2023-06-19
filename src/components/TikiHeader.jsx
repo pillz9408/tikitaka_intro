@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 function TikiHeader() {
 
@@ -7,16 +7,15 @@ function TikiHeader() {
         <div className="header">
             <div className="inner">
                 <h1 className="logo">
-                    <Link to={URL.MAIN} className="w"><img src="/img/brain_bi.png" alt="로고" /></Link>
-                    <Link to={URL.MAIN} className="m"><img src="/img/brain_bi.png" alt="로고" /></Link>
+                    <Link to="/"className="w"><img src="/img/brain_bi.png" alt="로고" /></Link>
+    
                 </h1>
                 <div className="gnb">
-                    <h2 className="blind">주메뉴</h2>
                     <ul>
-                        <li><NavLink className='nav-item' to={URL.COMPANY}>회사소개</NavLink></li>
-                        <li><NavLink className='nav-item' to={URL.PRODUCT}>제품소개</NavLink></li>
-                        <li><NavLink className='nav-item' to={URL.COST} >요금 및 비용</NavLink></li>
-                        <li><NavLink className='nav-item' to={URL.QA}>Q&A</NavLink></li>
+                        <li><Link to ="/company">Company</Link></li>
+                        <li><Link to ="/product">Product</Link></li>
+                        <li><Link to ="/cost">Cost</Link></li>
+                        <li><Link to ="/QnA">QnA</Link></li>
                     </ul>
                 </div>
             </div>

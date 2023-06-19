@@ -1,9 +1,12 @@
+import TikiFooter from "components/TikiFooter";
+import TikiHeader from "components/TikiHeader";
 import React from "react";
 
 function TikiCompany() {
 
     return (
         <div className="container">
+            <TikiHeader/>
             <div className="c_wrap">
                 <div className="contents SITE_INTRO" id="contents">
                     {/* <!-- 본문 --> */}
@@ -78,6 +81,7 @@ function TikiCompany() {
                     {/* <!--// 본문 --> */}
                 </div>
             </div>
+            <TikiFooter/>
         </div>
 
     );
