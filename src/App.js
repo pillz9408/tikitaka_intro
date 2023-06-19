@@ -6,11 +6,11 @@ import TikiProduct from 'components/product/TikiProduct';
 import TikiCost from 'components/cost/TikiCost';
 import QnAPage from 'components/qaPage/QnApage';
 //CSS
-import './css/base.css'
-import './css/components.css'
-import './css/layout.css'
-import './css/pages.css'
-import './css/bootstrap.min.css'
+import './css/base.css';
+import './css/components.css';
+import './css/layout.css';
+import './css/pages.css';
+import './css/bootstrap.min.css';
 
 
 function App() {
