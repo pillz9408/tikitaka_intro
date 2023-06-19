@@ -10,12 +10,14 @@ function TikiProduct(){
         <div className="">
           <TikiHeader/>    
         <h2 className='product_title'>티키타카 소개</h2>
+          <h3><img src="" /></h3>
+
           
-          <h3 className='product_subtitle'>1. 화상회의방 입장 방법</h3>
+          <h4 className='product_subtitle'>1. 화상회의방 입장 방법</h4>
           <HowToJoin></HowToJoin>
-          <h3 className='product_subtitle'>2. 화상회의방 공유 방법</h3>
+          <h4 className='product_subtitle'>2. 화상회의방 공유 방법</h4>
           <HowToShare></HowToShare>
-          <h3 className='product_subtitle'>3. 회의실 아이콘/기능 설명</h3>
+          <h4 className='product_subtitle'>3. 회의실 아이콘/기능 설명</h4>
           <FeatureExplain></FeatureExplain>
           <TikiFooter/>
         </div>
