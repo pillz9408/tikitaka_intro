@@ -13,7 +13,7 @@ function TikiMain() {
                     <div className="vb_bg pc">
                         <p className="wording_txt">
                             <span>간단한 미팅</span>
-                            부터 
+                            부터
                             <span>비즈니스 회의</span>
                             까지
                             <br />
@@ -23,7 +23,6 @@ function TikiMain() {
                             와 함께
                         </p>
                     </div>
-
                     <div className="vb_txt">
                         <div className="wrap">
                             <dl>

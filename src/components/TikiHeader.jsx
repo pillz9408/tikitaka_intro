@@ -15,7 +15,7 @@ function TikiHeader() {
                         <li><Link to ="/company">회사소개</Link></li>
                         <li><Link to ="/product">제품소개</Link></li>
                         <li><Link to ="/cost">요금 및 비용</Link></li>
-                        <li><Link to ="/QnA">QnA</Link></li>
+                        <li><Link to ="/QnA">이용 문의</Link></li>
                     </ul>
                 </div>
             </div>

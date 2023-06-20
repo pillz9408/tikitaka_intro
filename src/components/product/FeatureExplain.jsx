@@ -3,15 +3,15 @@ import Table from 'react-bootstrap/Table';
 
 function FeatureExplain() {
     return (
-        <Accordion className='featureExplain'>
+        <Accordion className='accordion'>
             <Accordion.Item eventKey='0'>
-                <Accordion.Header>회의실 상단 아이콘 </Accordion.Header>
-                <Accordion.Body>
-                    <Table striped bordered hover>
+                <Accordion.Header className='accordion_header'>회의실 상단 아이콘 </Accordion.Header>
+                <Accordion.Body className='accordion_body'>
+                    <Table striped bordered hover className='feature_table'>
                         <thead>
                             <tr>
-                                <th>#</th>
-                                <th>아이콘 이미지</th>
+                                <th className='num_tag'>#</th>
+                                <th className='upper_img_th'>이미지</th>
                                 <th>설명</th>
                                 <th>사용방법</th>
                             </tr>
@@ -19,55 +19,55 @@ function FeatureExplain() {
                         <tbody>
                             <tr>
                                 <td>1</td>
-                                <td><img className='upper_icon' alt='upper_btn' src='img/upperIcon/sessionTime.png'/></td>
+                                <td><img className='upper_icon' alt='upper_btn' src='img/upperIcon/upper_bar_session.png'/></td>
                                 <td>회의 진행 시간</td>
                                 <td>진행중인 회의의 진행시간을 알려줍니다.</td>
                             </tr>
                             <tr>
                                 <td>2</td>
-                                <td><img className='upper_icon' alt='upper_btn' src='img/upperIcon/Pin.png'/></td>
+                                <td><img className='upper_icon' alt='upper_btn' src='img/upperIcon/upper_bar_clip.png'/></td>
                                 <td>화면 고정</td>
                                 <td>일정 화면을 고정합니다.</td>
                             </tr>
                             <tr>
                                 <td>3</td>
-                                <td><img className='upper_icon' alt='upper_btn' src='img/upperIcon/zoomIn.png'/></td>
+                                <td><img className='upper_icon' alt='upper_btn' src='img/upperIcon/upper_bar_plus.png'/></td>
                                 <td>화면 확대</td>
                                 <td>화면을 확대합니다.</td>
                             </tr>
                             <tr>
                                 <td>4</td>
-                                <td><img className='upper_icon' alt='upper_btn' src='img/upperIcon/zoomOut.png'/></td>
+                                <td><img className='upper_icon' alt='upper_btn' src='img/upperIcon/upper_bar_minus.png'/></td>
                                 <td>화면 축소</td>
                                 <td>화면을 축소합니다.</td>
                             </tr>
                             <tr>
                                 <td>5</td>
-                                <td><img className='upper_icon' alt='upper_btn' src='img/upperIcon/full.png'/></td>
+                                <td><img className='upper_icon' alt='upper_btn' src='img/upperIcon/upper_bar_max.png'/></td>
                                 <td>전체 화면</td>
                                 <td>화면을 전체화면 모드로 전환합니다.</td>
                             </tr>
                             <tr>
                                 <td>6</td>
-                                <td><img className='upper_icon' alt='upper_btn' src='img/upperIcon/snap.png'/></td>
+                                <td><img className='upper_icon' alt='upper_btn' src='img/upperIcon/upper_bar_cap.png'/></td>
                                 <td>화면 캡처</td>
                                 <td>회의중인 현재 화면을 캡처합니다.</td>
                             </tr>
                             <tr>
                                 <td>7</td>
-                                <td><img className='upper_icon' alt='upper_btn' src='img/upperIcon/privacy.png'/></td>
+                                <td><img className='upper_icon' alt='upper_btn' src='img/upperIcon/upper_bar_cir.png'/></td>
                                 <td>동그라미 화면 모드</td>
                                 <td>개인 화면을 동그라미 부분에만 나오게 합니다.</td>
                             </tr>
                             <tr>
                                 <td>8</td>
-                                <td><img className='upper_icon' alt='upper_btn' src='img/upperIcon/videoOn.png'/><img src='img/upperIcon/videoOff.png'/></td>
+                                <td><img className='upper_icon' alt='upper_btn' src='img/upperIcon/upper_bar_cam.png'/></td>
                                 <td>카메라 상태</td>
                                 <td>현재 카메라가 켜져있거나 꺼져있음을 알려줍니다.</td>
                             </tr>
                             <tr>
-                                <td>8</td>
-                                <td><img className='upper_icon' alt='upper_btn' src='img/upperIcon/audioOn.png'/><img src='img/upperIcon/audioOff.png'/></td>
+                                <td>9</td>
+                                <td><img className='upper_icon' alt='upper_btn' src='img/upperIcon/upper_bar_snd.png'/></td>
                                 <td>마이크 상태</td>
                                 <td>현재 마이크가 켜져있거나 꺼져있음을 알려줍니다.</td>
                             </tr>
@@ -76,14 +76,14 @@ function FeatureExplain() {
                 </Accordion.Body>
             </Accordion.Item>
             <Accordion.Item eventKey='1'>
-                <Accordion.Header>회의실 사이드바 아이콘</Accordion.Header>
-                <Accordion.Body>
-                    <Table striped bordered hover>
+                <Accordion.Header className='accordion_header'>회의실 사이드바 아이콘</Accordion.Header>
+                <Accordion.Body className='accordion_body'>
+                    <Table className='feature_table' striped bordered hover>
                         <thead>
                             <tr>
-                                <th>#</th>
-                                <th>아이콘 이미지</th>
-                                <th>설명</th>
+                                <th className='num_tag'>#</th>
+                                <th className='btn_tag'>아이콘</th>
+                                <th className='intro_tag'>설명</th>
                                 <th>사용방법</th>
                             </tr>
                         </thead>

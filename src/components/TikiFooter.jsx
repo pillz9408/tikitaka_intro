@@ -2,14 +2,16 @@ import React from 'react';
 
 function TikiFooter() {
     return (
-        <div className="footer">
-            <div className="inner">
-                <div className="info">
-                    <p>
-                        대표문의메일 : thebrains19@gmail.com  <span className="m_hide">|</span><br className="m_show" />  대표전화 : 0000-0000 (000-0000-0000)<br />
-                        호환성확인 : 000-0000-0000  |  교육문의 : 0000-0000-0000
-                    </p>
-                    <p className="copy">Copyright © </p>
+        <div className='wrapper'>
+            <div className="footer">
+                <div className="inner">
+                    <div className="info">
+                        <p className='footer_txt'>
+                            (주) 오렌지 픽셀  | 대표 문의 메일 : ceo@orangepixel.co.kr <br />
+                            본사 : 서울특별시 강남구 테헤란로 53길 57-14 오빌벤쳐타워 407호
+                        </p>
+                        <p className="copy">© 2023. orangepixel all rights reserved </p>
+                    </div>
                 </div>
             </div>
         </div>

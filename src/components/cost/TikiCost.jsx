@@ -14,7 +14,7 @@ function TikiCost() {
                         <p className="wording_txt">
                         <strong>이용 요금</strong>
                         </p>
-                        <div><img src="img/Cost/Cost.png" /></div>
+                        <div><img className="cost_img" alt="요금표" src="img/Cost/Cost.png" /></div>
                     </div>
                 </div>
             </section>

@@ -1,25 +1,67 @@
 @charset "utf-8";
 
-/* Title */
-.tit_1 {position: relative; padding-bottom: 50px; color: #222; font-size: 48px; font-weight: 500; letter-spacing: -2px; line-height: 48px;}
-.tit_1::after {content: ""; display: block; position: absolute; left: 0; bottom: 0; width: 30px; height: 2px; background: #0465be;}
+/* accordion */
+.accordion {
+    position: relative;
+    width: auto;
+    height: auto;
+    padding: 2vw 3vw 2vw;
+}
 
-.tit_2 {font-size: 30px; font-weight: 700;}
+.accordion .accordion_item{
+    font-family: 'gsm';
 
-.tit_3 {color: #222; font-size: 48px; font-weight: 500; line-height: 44px; letter-spacing: -2px;}
+}
 
-.tit_4 {position: relative; padding-top: 12px; font-size: 30px; font-weight: 700;}
-.tit_4::before {content: ""; display: block; position: absolute; left: 0; top: 0; width: 30px; height: 2px; background: #0465be;}
-
-.tit_5 {color: #222; font-size: 26px; font-weight: 700;}
-
-/* Text */
-.txt_1 {color: #666; font-size: 20px; line-height: 30px;}
-
-/* 리액트 관련 */
-.react-datepicker-wrapper,
-.react-datepicker__input-container {display: inline-block; vertical-align: top; width: auto;}
+.accordion .accordion_header{
+    font-family: 'gsb';
+    font-size: 20px;
+}
 
 
-/* 리액트 관련 */
-.react-datepicker__tab-loop {display: inline-block;}
+.accordion .accordion_body .accordion_body_txt{
+    font-family: 'gsm';
+}
+
+.accordion .accordion_img{
+    width: 600px;
+    height: auto;
+	object-fit: contain;
+	object-position: center center center center;
+}
+
+/* table */
+
+.accordion .accordion_body .upper_icon{
+    width: 100%;
+    height: 30px;
+    text-align: center;
+}
+
+.accordion .accordion_body .side_bar_icon{
+    width: 40px;
+    height: 40px;
+    text-align: center;
+}
+
+.feature_table{
+    font-family: 'gsm';
+    text-align: center;
+}
+
+.feature_table .num_tag {
+    width: 45px;
+}
+.feature_table .btn_tag {
+    width: 70px;
+}
+
+.feature_table .intro_tag {
+    width: 200px;
+}
+
+.feature_table .upper_img_th {
+    width: 321px;
+}
+
+

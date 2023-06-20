@@ -9,13 +9,12 @@ import QnAPage from 'components/qaPage/QnApage';
 import './css/base.css';
 import './css/components.css';
 import './css/layout.css';
-import './css/pages.css';
 import './css/bootstrap.min.css';
-
 
 function App() {
 
   return ( 
+    <div>
       <Routes>
         <Route exact path="/" element={<TikiMain/>} />
         <Route path="/company" element={<TikiCompany/>}  />
@@ -23,8 +22,8 @@ function App() {
         <Route path="/cost" element={<TikiCost/>}  />
         <Route path="/qna" element={<QnAPage/>} /> 
       </Routes>
+      </div>  
   )
 }
-
 
 export default App;

@@ -5,22 +5,22 @@ import React from "react";
 function TikiCompany() {
 
     return (
-        <div>
-            <TikiHeader />
-            <section id="top" className="vb">
-                <div className="vb_wording wrap">
-                    <div className="vb_bg pc"></div>
-                    <div className="vb_bg pc">
-                        <p className="wording_txt">
-                        <strong>회사 소개</strong>
-                        </p>
-                        <div><img src="img/Company/Company_intro_orange.png" /></div>
+        
+            <div>
+                <TikiHeader />
+                <section id="top" className="vb">
+                    <div className="vb_wording wrap">
+                        <div className="vb_bg pc"></div>
+                        <div className="vb_bg pc">
+                            <p className="wording_txt">
+                                <strong>회사 소개</strong>
+                            </p>
+                            <div><img className="company_intro_img" src="img/Company/company_intro_orange.png" /></div>
+                        </div>
                     </div>
-                </div>
-            </section>
-            <TikiFooter />
-        </div>
-
+                </section>
+                <TikiFooter></TikiFooter>
+            </div>
     );
 }
 
