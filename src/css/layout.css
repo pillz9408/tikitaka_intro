@@ -38,17 +38,17 @@ body {
 
 .header .logo {
 	display: inline-block;
-	padding: 60px 0px 0px 10px;
+	padding: 70px 0px 0px 10px;
 }
 
 .header .logo .w img {
-	width: 180px;
+	width: 200px;
 	height: auto;
 	float: left;
 }
 
 .header .logo .m img {
-	width: 130px;
+	width: 180px;
 	height: auto;
 	float: left;
 	margin-right: 10px;
