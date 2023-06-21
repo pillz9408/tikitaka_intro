@@ -214,23 +214,24 @@ body {
 }
 
 .vb .product_intro_img {
-	width: 1270px;
-	height: 600px;
+	max-width: 100%;
+	width: auto !important;
+	height: auto;
 	object-fit: contain;
 }
 
 .vb .company_intro_img {
-	width: 1270px;
-	height: 600px;
+	max-width: 100%;
+	width: auto !important;
+	height: auto;
 	object-fit: contain;
-	object-position: 50% 50%;
 }
 
 .vb .cost_img {
-	width: 1270px;
-	height: 600px;
+	max-width: 100%;
+	width: auto !important;
+	height: auto;
 	object-fit: contain;
-	object-position: 50% 50%;
 }
 
 .vb .vb_wording .wording_txt span {
