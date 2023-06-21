@@ -2,13 +2,10 @@ import React from "react";
 import HowToJoin from "./HowToJoin";
 import HowToShare from "./HowToShare";
 import FeatureExplain from "./FeatureExplain";
-import TikiHeader from "components/TikiHeader";
-import TikiFooter from "components/TikiFooter";
 
 function TikiProduct() {
   return (
     <div>
-      <TikiHeader></TikiHeader>
       <body>
         <section id="top" className="vb">
           <div className="vb_wording wrap">
@@ -32,7 +29,6 @@ function TikiProduct() {
           </div>
         </section>
       </body>
-      <TikiFooter></TikiFooter>
     </div>
 
   );

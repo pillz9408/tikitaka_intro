@@ -1,12 +1,9 @@
-import TikiFooter from "components/TikiFooter";
-import TikiHeader from "components/TikiHeader";
 import React from "react";
 
 function TikiMain() {
 
     return (
         <div>
-            <TikiHeader />
             <section id="top" className="vb">
                 <div className="vb_wording wrap">
                     <div className="vb_bg pc"></div>
@@ -51,7 +48,6 @@ function TikiMain() {
                     </div>
                 </div>
             </section>
-            <TikiFooter />
         </div>
     );
 }

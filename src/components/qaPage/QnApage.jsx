@@ -1,12 +1,8 @@
 import React from "react";
 
-import TikiFooter from "components/TikiFooter";
-import TikiHeader from "components/TikiHeader";
-
 function QnAPage() {
     return (
         <div>
-            <TikiHeader></TikiHeader>
             <div>
                 <section id="top" className="vb">
                     <div className="vb_wording wrap">
@@ -21,7 +17,6 @@ function QnAPage() {
                     </div>
                 </section>
             </div>
-            <TikiFooter></TikiFooter>
         </div>
     );
 }
