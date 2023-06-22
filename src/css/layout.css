@@ -38,17 +38,19 @@ body {
 
 .header .logo {
 	display: inline-block;
-	padding: 70px 0px 0px 10px;
+	margin-left: 80px;
+	padding: 60px 0px 0px 10px;
+	
 }
 
 .header .logo .w img {
-	width: 200px;
+	width: 180px;
 	height: auto;
 	float: left;
 }
 
 .header .logo .m img {
-	width: 180px;
+	width: 200px;
 	height: auto;
 	float: left;
 	margin-right: 10px;
@@ -185,11 +187,48 @@ li:hover .dropdown-menu {
 	font-family: 'gsm';
 }
 
+.footer .logo{
+	float: right;
+	margin-top: 10px;
+	margin-left: 0px;
+	padding: 50px 0px 0px 00px;
+}
+
+.footer .logo .w img {
+	width: 150px;
+	height: auto;
+	float: left;
+}
+
+.footer .logo .and_img img {
+	width: 20px;
+	height: auto;
+	float: left;
+	margin-left: 10px;
+	margin-top: 5px;
+	margin-right: 10px;
+}
+
+
+
+.footer .logo .m img {
+	width: 120px;
+	height: auto;
+	float: left;
+}
+
+
 /* Main */
 .wrap {
 	width: 77vw;
 	margin: 0 auto;
 }
+.wrap_c {
+	width: 77vw;
+	margin: 0 auto;
+	text-align: center;
+}
+
 
 .font_blue {
 	color: #1254ff;
@@ -211,15 +250,6 @@ li:hover .dropdown-menu {
 	position: relative;
 }
 
-.vb .vb_wording .vb_bg .vb_img_bg1 {
-	background: url('./images/vb_img_bg1.png') no-repeat center/cover;
-	position: absolute;
-	width: 30vw;
-	height: 30vw;
-	top: 0;
-	left: -11.5vw;
-}
-
 .vb .vb_wording .vb_bg .vb_imgset {
 	position: absolute;
 	width: 28vw;
@@ -228,21 +258,19 @@ li:hover .dropdown-menu {
 	right: -2vw;
 }
 
-.vb .vb_wording .vb_bg .vb_img_bg2 {
-	background: url('images/vb_img_bg2.png') no-repeat center/cover;
-}
-
-.vb .vb_wording .vb_bg .vb_img_man {
-	background: url('#img') no-repeat center/cover;
-	filter: drop-shadow(0.5em 0.5em 1em rgba(0, 0, 0, 0.2));
-}
-
 .vb .vb_wording .wording_txt:before {
 	content: "";
 	display: block;
 	width: 30px;
 	height: 4px;
 	background: #1254ff;
+	margin: 0 0.5vw 0.5vw;
+}
+.vb .vb_wording .wording_txt2:before {
+	content: "";
+	display: block;
+	width: 30px;
+	height: 4px;
 	margin: 0 0.5vw 0.5vw;
 }
 
@@ -284,6 +312,21 @@ li:hover .dropdown-menu {
 .vb .vb_wording .wording_txt .point {
 	font-size: 60px;
 	margin-right: 0.5vw;
+}
+
+.vb .vb_wording .wording_txt2 {
+	margin-bottom: 2vw;
+	font-family: 'Noto Sans KR';
+	font-size: 54px;
+	line-height: 1.5;
+	letter-spacing: -0.03em;
+	transform: skew(-0.03deg);
+	color: #111;
+}
+
+.vb .vb_wording .wording_txt2 span {
+	font-size: 30px;
+	font-weight: 500;
 }
 
 
@@ -343,8 +386,8 @@ li:hover .dropdown-menu {
 }
 
 .vb .qna_QR {
-	width: 400px;
-	height: 400px;
-	position: relative;
+	width: 200px;
+	height: 200px;
+	position: center;
 	padding: 20px 20px 20px 20px;
 }

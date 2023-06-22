@@ -26,11 +26,11 @@ function TikiHeader() {
             <div className="inner">
                 <div className="logo">
                     <Link to="/" className="m">
-                        <img src="/img/logo_black.png" alt="로고1" />
+                        <img src="/img/TIki.png" alt="로고1" />
                     </Link>
-                    <Link to="/" className="w">
+                    {/* <Link to="/" className="w">
                         <img src="/img/brain_bi.png" alt="로고2" />
-                    </Link>
+                    </Link> */}
                 </div>
                 <div className="gnb">
                     <ul>
