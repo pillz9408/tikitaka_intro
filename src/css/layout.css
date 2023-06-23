@@ -7,7 +7,6 @@ html {
 
 body {
 	height: 100%;
-	min-width: 1400px;
 }
 
 /*Header*/
@@ -159,7 +158,7 @@ li:hover .dropdown-menu {
 
 .footer .inner {
 	position: relative;
-	width: 1400px;
+	width: 100%;
 	margin: 0 auto;
 	padding: 0 50px;
 }
@@ -219,12 +218,16 @@ li:hover .dropdown-menu {
 
 
 /* Main */
+.mob {
+	display: none !important;
+}
+
 .wrap {
-	width: 77vw;
+	width: 100%;
 	margin: 0 auto;
 }
 .wrap_c {
-	width: 77vw;
+	width: 100%;
 	margin: 0 auto;
 	text-align: center;
 }

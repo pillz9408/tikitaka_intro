@@ -12,22 +12,44 @@ import './css/base.css';
 import './css/components.css';
 import './css/layout.css';
 import './css/bootstrap.min.css';
-
+import './css/m_layout.css'
+//responsive
+import { Pc, Mobile } from 'components/view';
+import TikiHeader from 'components/TikiHeader';
+import TikiFooter from 'components/TikiFooter';
+import MobileHead from 'components/MobileHeader';
 
 function App() {
 
-  return ( 
+  return (
     <div>
-      <Routes>
-        <Route exact path="/" element={<TikiMain/>} />
-        <Route path="/company" element={<OrangePixel/>}  />
-        <Route path="/company/orangepixel" element={<OrangePixel/>}  />
-        <Route path="/company/thebrains" element={<TheBrains/>}  />
-        <Route path="/product" element={<TikiProduct/>}  />
-        <Route path="/cost" element={<TikiCost/>}  />
-        <Route path="/qna" element={<QnAPage/>} /> 
-      </Routes>
-      </div>  
+      <Pc>
+        <TikiHeader></TikiHeader>
+        <Routes>
+          <Route exact path="/" element={<TikiMain />} />
+          <Route path="/company" element={<OrangePixel />} />
+          <Route path="/company/orangepixel" element={<OrangePixel />} />
+          <Route path="/company/thebrains" element={<TheBrains />} />
+          <Route path="/product" element={<TikiProduct />} />
+          <Route path="/cost" element={<TikiCost />} />
+          <Route path="/qna" element={<QnAPage />} />
+        </Routes>
+        <TikiFooter></TikiFooter>
+      </Pc>
+      <Mobile>
+        <MobileHead></MobileHead>
+        <Routes>
+          <Route exact path="/" element={<TikiMain />} />
+          <Route path="/company" element={<OrangePixel />} />
+          <Route path="/company/orangepixel" element={<OrangePixel />} />
+          <Route path="/company/thebrains" element={<TheBrains />} />
+          <Route path="/product" element={<TikiProduct />} />
+          <Route path="/cost" element={<TikiCost />} />
+          <Route path="/qna" element={<QnAPage />} />
+        </Routes>
+        <TikiFooter/>
+      </Mobile>
+    </div>
   )
 }
 

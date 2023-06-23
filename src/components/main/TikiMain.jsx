@@ -10,12 +10,12 @@ function TikiMain() {
                     <div className="vb_bg pc">
                         <p className="wording_txt">
                             <span>간단한 미팅</span>
-                            부터
+                            부터 <br className="mob" />
                             <span>비즈니스 회의</span>
                             까지
                             <br />
                             언제 어디에서나
-                            <br className="mob" />
+                            <br/>
                             <span className="point point_txt font_blue">티키타카</span>
                             와 함께
                         </p>

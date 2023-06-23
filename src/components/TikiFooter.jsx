@@ -9,7 +9,7 @@ function TikiFooter() {
                     <div className="info">
                         <p className='footer_txt'>
                             <strong>(주) 오렌지픽셀 </strong> <br />
-                            문의 메일 : ceo@orangepixel.co.kr | 전화 번호 : 010-3871-7182
+                            <p className='footer_txt'>문의 메일 : ceo@orangepixel.co.kr</p><p className='footer_txt'>전화 번호 : 010-3871-7182</p>
                         </p>
                         <p className="copy">© 2023. orangepixel all rights reserved </p>
                     </div> 

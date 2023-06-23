@@ -71,12 +71,12 @@ function TikiHeader() {
                         </li>
                         <li>
                             <NavLink to="/cost" isActive={isActive}>
-                                요금 및 비용
+                                요금제 및 비용
                             </NavLink>
                         </li>
                         <li>
                             <NavLink to="/QnA" isActive={isActive}>
-                                이용 문의
+                                이용문의
                             </NavLink>
                         </li>
                     </ul>
