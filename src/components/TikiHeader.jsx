@@ -23,15 +23,12 @@ function TikiHeader() {
 
     return (
         <div className="header">
+            <div className="logo">
+                <Link to="/" className="w">
+                    <img src="/img/TIki.png" alt="로고1" />
+                </Link>
+            </div>
             <div className="inner">
-                <div className="logo">
-                    <Link to="/" className="m">
-                        <img src="/img/TIki.png" alt="로고1" />
-                    </Link>
-                    {/* <Link to="/" className="w">
-                        <img src="/img/brain_bi.png" alt="로고2" />
-                    </Link> */}
-                </div>
                 <div className="gnb">
                     <ul>
                         <li>

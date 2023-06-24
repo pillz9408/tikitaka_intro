@@ -1,6 +1,12 @@
 import React from "react";
+import useTypingEffect from "hooks/useTypingEffect";
 
 function TikiMain() {
+
+    const texts = ["간단한 미팅", "비즈니스 회의", "LIVE 방송"];
+    const delay = 300;
+  
+    const displayedText = useTypingEffect(texts, delay);
 
     return (
         <div>
@@ -9,13 +15,10 @@ function TikiMain() {
                     <div className="vb_bg pc"></div>
                     <div className="vb_bg pc">
                         <p className="wording_txt">
-                            <span>간단한 미팅</span>
-                            부터 <br className="mob" />
-                            <span>비즈니스 회의</span>
-                            까지
+                            <span>{displayedText}</span>
                             <br />
                             언제 어디에서나
-                            <br/>
+                            <br />
                             <span className="point point_txt font_blue">티키타카</span>
                             와 함께
                         </p>
@@ -33,6 +36,7 @@ function TikiMain() {
                                     어떤 언어로 대화해도, AI번역을 통해 자동으로 통역해줍니다.
                                 </dd>
                             </dl>
+                            <br className="mob" />
                             <dl className="vb_s2">
                                 <dt>
                                     <span className="font_blue">02</span>

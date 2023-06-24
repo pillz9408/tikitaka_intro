@@ -7,16 +7,14 @@ import TheBrains from 'components/company/thebrains';
 import TikiProduct from 'components/product/TikiProduct';
 import TikiCost from 'components/cost/TikiCost';
 import QnAPage from 'components/qaPage/QnApage';
-//CSS
-import './css/base.css';
-import './css/components.css';
-import './css/layout.css';
-import './css/bootstrap.min.css';
-import './css/m_layout.css'
-//responsive
-import { Pc, Mobile } from 'components/view';
 import TikiHeader from 'components/TikiHeader';
 import TikiFooter from 'components/TikiFooter';
+//CSS
+import './css/base.css';
+import './css/layout.css';
+import './css/bootstrap.min.css';
+//responsive
+import { Pc, Mobile } from 'components/view';
 import MobileHead from 'components/MobileHeader';
 
 function App() {
@@ -34,7 +32,6 @@ function App() {
           <Route path="/cost" element={<TikiCost />} />
           <Route path="/qna" element={<QnAPage />} />
         </Routes>
-        <TikiFooter></TikiFooter>
       </Pc>
       <Mobile>
         <MobileHead></MobileHead>
@@ -47,8 +44,8 @@ function App() {
           <Route path="/cost" element={<TikiCost />} />
           <Route path="/qna" element={<QnAPage />} />
         </Routes>
-        <TikiFooter/>
       </Mobile>
+      <TikiFooter></TikiFooter>
     </div>
   )
 }
