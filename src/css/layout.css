@@ -5,7 +5,8 @@
 :root {
 	--font-size-point: max(3rem, min(4vw, 3.5rem));
 	--font-size-xl: max(2.5rem, min(3vw, 2.5rem));
-	--font-size-lg: max(2rem, min(2vw, 2.5rem));
+	--font-size-lg: max(2rem, min(2vw, 2rem));
+	--font-size-nav: max(1.7rem, min(1.8vw, 1.8rem));
 	--font-size-base: max(1rem, min(1vw, 1.5rem));
 	--font-size-sm: max(0.9rem, min(0.8vw, 1.5rem));
 	--font-size-xs: max(0.85rem, min(0.6vw, 1.5rem));
@@ -84,12 +85,12 @@ body {
 }
 
 .header .gnb ul li+li {
-	margin-left: 2rem;
+	margin-left: 1rem;
 }
 
 .header .gnb ul li a {
 	color: #666;
-	font-size: var(--font-size-lg);
+	font-size: var(--font-size-nav);
 	font-weight: 700;
 	letter-spacing: -0.25px;
 }
@@ -165,7 +166,7 @@ li:hover .dropdown-menu {
 .footer .inner {
 	position: relative;
 	width: 100%;
-	margin: 0 auto;
+	margin: 0 2rem;
 	padding: 0 2rem;
 }
 
@@ -240,13 +241,13 @@ li:hover .dropdown-menu {
 }
 
 .wrap {
-	width: 100%;
+	width: 100vw;
 	margin: 0 auto;
 	/* min-height: 100vh; */
 }
 
 .wrap_c {
-	width: 100%;
+	width: 100vw;
 	height: auto;
 	margin: 0 auto;
 	text-align: center;
@@ -459,7 +460,7 @@ li:hover .dropdown-menu {
 	/* 가로 스크롤을 허용합니다. */
 }
 
-.accordion_table_body .accordion-body{
+.accordion_table_body .accordion-body {
 	overflow-x: auto;
 	min-width: 900px;
 }
@@ -537,7 +538,7 @@ li:hover .dropdown-menu {
 		background-color: #ffffff;
 	}
 
-	.bg-body-tertiary .navbar .navbar-light{
+	.bg-body-tertiary .navbar .navbar-light {
 		background-color: #ffffff;
 		width: 100%;
 	}
@@ -638,7 +639,7 @@ li:hover .dropdown-menu {
 
 	.wrap_c {
 		width: 100%;
-		min-height: 100vh;
+		min-height: 80vh;
 		text-align: center;
 	}
 
@@ -743,11 +744,12 @@ li:hover .dropdown-menu {
 
 	.vb .vb_txt {
 		margin-top: 50px;
-        padding: 40px 0 50px;
+		padding: 40px 0 50px;
 	}
 
 	.vb .vb_txt .wrap {
 		display: block;
+		width: max-content;
 	}
 
 	.vb .vb_txt dl {
@@ -755,9 +757,10 @@ li:hover .dropdown-menu {
 		margin-right: 2%;
 		transform: skew(-0.03deg);
 	}
+
 	.vb .vb_txt dl:first-child dd {
-		margin-bottom: 20px;        
-	} 
+		margin-bottom: 20px;
+	}
 
 	.vb .vb_txt dl.vb_s2 {
 		display: block;
@@ -775,26 +778,30 @@ li:hover .dropdown-menu {
 	.vb .vb_txt dl dt span {
 		font-size: var(--font-size-sm);
 		font-family: 'gsm';
-		padding-right: 0.1em;
+		padding-right: 0.5em;
+		text-align: left;
 	}
 
 	.vb .vb_txt dl dd {
 		margin-top: 2%;
+		margin-left: 2%;
+		margin-right: 2%;
 		font-size: var(--font-size-xs);
 		line-height: 1.6;
-		padding: 0.5rem;
+		padding: 0.2rem;
 		box-sizing: border-box;
-		width: 100%;
+		width: 90%;
 		background: #fff;
 		font-weight: 600;
 		color: #333;
-		border-radius: 10px;
+		border-radius: 15px;
+		text-align: left;
 	}
 
 	.vb .wrap .subtitle {
 		font-family: 'gsm';
 		padding: 0.7rem;
-		font-size: var(--font-size-base);
+		font-size: var(--font-size-sm);
 	}
 
 
@@ -819,6 +826,29 @@ li:hover .dropdown-menu {
 		position: center;
 		padding: 5px 5px 5px 5px;
 	}
+
+
+	.vb .product_intro_img {
+		overflow: auto;
+		width: 100% !important;
+		height: auto;
+		object-fit: contain;
+	}
+
+	.vb .company_intro_img {
+		overflow: auto;
+		width: 100% !important;
+		height: auto;
+		object-fit: contain;
+	}
+
+	.vb .cost_img {
+		overflow: auto;
+		width: auto !important;
+		height: auto;
+		object-fit: contain;
+	}
+
 
 	/*mobile table*/
 
@@ -848,5 +878,5 @@ li:hover .dropdown-menu {
 	.feature_table_container {
 		width: 100%;
 		overflow: auto;
-	  }
+	}
 }
