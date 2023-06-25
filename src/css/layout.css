@@ -3,20 +3,18 @@
 
 
 :root {
-	--font-size-point: max(4rem, min(4vw, 3.5rem));
-	--font-size-xl: max(3rem, min(3vw, 2.5rem));
+	--font-size-point: max(3rem, min(4vw, 3.5rem));
+	--font-size-xl: max(2.5rem, min(3vw, 2.5rem));
 	--font-size-lg: max(2rem, min(2vw, 2.5rem));
 	--font-size-base: max(1rem, min(1vw, 1.5rem));
 	--font-size-sm: max(0.9rem, min(0.8vw, 1.5rem));
 	--font-size-xs: max(0.85rem, min(0.6vw, 1.5rem));
 }
 
-html {
-	height: 100%;
-}
-
-
+html,
 body {
+	margin: 0;
+	padding: 0;
 	width: 100%;
 	height: 100%;
 }
@@ -42,18 +40,19 @@ body {
 }
 
 .header>.logo {
-	display: inline-block;
+	display: flex;
 	margin-left: 10%;
-	padding: 2rem 0rem 0rem 0.8rem;
-	width: 20%;
+	padding: 3rem 0rem 0rem 0.8rem;
+	float: left;
+
 }
 
 .header>.inner {
-	position: left;
-	width: 80%;
+	display: flex;
+	justify-content: space-between;
 	height: 15%;
 	margin: 0 auto;
-	padding: 0 50px;
+	padding: 2rem 0 0 2rem;
 }
 
 .header .logo .w img {
@@ -65,9 +64,7 @@ body {
 
 .header .gnb {
 	float: right;
-	left: 30rem;
-	top: 3rem;
-	bottom: 0.5rem;
+	margin: 2rem;
 	width: auto;
 }
 
@@ -144,15 +141,15 @@ li:hover .dropdown-menu {
 	min-height: 100%;
 	position: relative;
 	font-family: 'gsm';
-  }
-  
-  .footer {
+}
+
+.footer {
 	position: relative;
 	bottom: 0;
 	left: 0;
 	width: 100%;
 	background: #bbbbbb;
-  }
+}
 
 .footer::before {
 	content: "";
@@ -245,10 +242,12 @@ li:hover .dropdown-menu {
 .wrap {
 	width: 100%;
 	margin: 0 auto;
+	min-height: 100vh;
 }
 
 .wrap_c {
 	width: 100%;
+	height: auto;
 	margin: 0 auto;
 	text-align: center;
 }
@@ -266,6 +265,7 @@ li:hover .dropdown-menu {
 	position: relative;
 	background: #fff;
 	padding: 20px 0 35px;
+	flex: 1;
 }
 
 .vb .vb_wording {
@@ -332,6 +332,10 @@ li:hover .dropdown-menu {
 
 .vb .vb_wording .wording_txt span {
 	font-weight: 500;
+}
+
+.vb .vb_wording .moving_txt {
+	font-size: var(--font-size-point);
 }
 
 .vb .vb_wording .wording_txt .point {
@@ -450,25 +454,31 @@ li:hover .dropdown-menu {
 }
 
 /* feature explain */
-.table-container {
+.accordion_table {
 	overflow-x: auto;
 	/* 가로 스크롤을 허용합니다. */
 }
 
-.accordion .accordion_body .upper_icon {
+.accordion_table_body .accordion-body{
+	overflow-x: auto;
+	min-width: 900px;
+}
+
+.accordion_table .accordion_table_header {
+	font-family: 'gsb';
+	font-size: var(--font-size-lg);
+}
+
+.accordion_table .accordion_table_body .upper_icon {
 	max-width: 100%;
 	height: 2rem;
 	text-align: center;
 }
 
-.accordion .accordion_body .side_bar_icon {
+.accordion_table .accordion_table_body .side_bar_icon {
 	max-width: 100%;
 	height: 40px;
 	text-align: center;
-}
-
-.table-container {
-	overflow-x: auto;
 }
 
 .feature_table {
@@ -502,13 +512,10 @@ li:hover .dropdown-menu {
 /*Mobile*/
 @media (max-width: 768px) {
 
-	html {
-		height: 100%;
-		font-size: 14px;
-	}
-
-
+	html,
 	body {
+		margin: 0;
+		padding: 0;
 		width: 100%;
 		height: 100%;
 	}
@@ -522,11 +529,17 @@ li:hover .dropdown-menu {
 	.m_header {
 		position: relative;
 		font-family: 'gsb';
+		background-color: #ffffff;
 	}
 
-	s .bg-body-tertiary {
+	.bg-body-tertiary {
 		width: 100%;
 		background-color: #ffffff;
+	}
+
+	.bg-body-tertiary .navbar .navbar-light{
+		background-color: #ffffff;
+		width: 100%;
 	}
 
 	.m_wrap.container {
@@ -559,16 +572,19 @@ li:hover .dropdown-menu {
 		position: relative;
 		min-height: 100%;
 		font-family: 'gsm';
+		margin-top: auto;
 	}
 
 	.footer {
 		position: relative;
+		display: block;
 		bottom: 0;
 		left: 0;
 		width: 100%;
+		height: auto;
 		background: #bbbbbb;
 	}
-	
+
 
 	.footer::before {
 		content: "";
@@ -623,6 +639,7 @@ li:hover .dropdown-menu {
 
 	.wrap_c {
 		width: 100%;
+		min-height: 100vh;
 		text-align: center;
 	}
 
@@ -680,21 +697,21 @@ li:hover .dropdown-menu {
 	}
 
 	.vb .product_intro_img {
-		max-width: 80%;
+		max-width: 100%;
 		width: auto !important;
 		height: auto;
 		object-fit: contain;
 	}
 
 	.vb .company_intro_img {
-		max-width: 80%;
+		max-width: 100%;
 		width: auto !important;
 		height: auto;
 		object-fit: contain;
 	}
 
 	.vb .cost_img {
-		max-width: 80%;
+		max-width: 100%;
 		width: auto !important;
 		height: auto;
 		object-fit: contain;
@@ -726,18 +743,12 @@ li:hover .dropdown-menu {
 
 
 	.vb .vb_txt {
-		width: 100%;
-		bottom: 1vw;
-		background: #eee;
-		display: flex;
-		align-items: left;
-		justify-content: space-between;
-		padding: 0.2vw;
-		box-sizing: border-box;
+		margin-top: 50px;
+        padding: 40px 0 50px;
 	}
 
 	.vb .vb_txt .wrap {
-		display: flex;
+		display: block;
 	}
 
 	.vb .vb_txt dl {
@@ -745,9 +756,16 @@ li:hover .dropdown-menu {
 		margin-right: 2%;
 		transform: skew(-0.03deg);
 	}
+	.vb .vb_txt dl:first-child dd {
+		margin-bottom: 20px;        
+	} 
 
 	.vb .vb_txt dl.vb_s2 {
-		margin-right: 0;
+		display: block;
+		float: none;
+		width: 100%;
+		padding: 20px 0;
+		text-align: center;
 	}
 
 	.vb .vb_txt dl dt {
@@ -756,15 +774,15 @@ li:hover .dropdown-menu {
 	}
 
 	.vb .vb_txt dl dt span {
-		font-size: 1em;
+		font-size: var(--font-size-sm);
 		font-family: 'gsm';
 		padding-right: 0.1em;
 	}
 
 	.vb .vb_txt dl dd {
 		margin-top: 2%;
-		font-size: var(--font-size-base);
-		line-height: 1.7;
+		font-size: var(--font-size-xs);
+		line-height: 1.6;
 		padding: 0.5rem;
 		box-sizing: border-box;
 		width: 100%;
@@ -828,9 +846,8 @@ li:hover .dropdown-menu {
 		background-color: #ffffff;
 	}
 
-	.table-container {
-		max-width: 100% !important;
-		/* 가로 너비를 100%로 설정합니다. */
-		overflow-x: scroll;
-	}
+	.feature_table_container {
+		width: 100%;
+		overflow: auto;
+	  }
 }

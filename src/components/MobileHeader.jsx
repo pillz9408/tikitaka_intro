@@ -19,7 +19,7 @@ function MobileHead() {
 
   return (
     <div className="m_header">
-      <Navbar expand="lg" className="bg-body-tertiary">
+      <Navbar expand="" className="bg-body-tertiary">
         <Container className="m_wrap">
           <Navbar.Brand as={Link} to="/">
             <img className="logo" src="/img/Tiki.png" alt="Logo" />

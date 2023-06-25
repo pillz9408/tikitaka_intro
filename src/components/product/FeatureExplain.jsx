@@ -3,11 +3,11 @@ import Table from 'react-bootstrap/Table';
 
 function FeatureExplain() {
     return (
-        <Accordion className='accordion'>
+        <Accordion className='accordion_table'>
             <Accordion.Item eventKey='0'>
-                <Accordion.Header className='accordion_header'>회의실 상단 아이콘 </Accordion.Header>
-                <Accordion.Body className='accordion_body'>
-                    <div className='table-container'>
+                <Accordion.Header className='accordion_table_header'>회의실 상단 아이콘 </Accordion.Header>
+                <Accordion.Body className='accordion_table_body'>
+                    <div className='feature_table_container'>
                         <Table striped bordered hover className='feature_table'>
                             <thead>
                                 <tr>
@@ -74,13 +74,12 @@ function FeatureExplain() {
                                 </tr>
                             </tbody>
                         </Table>
-                    </div>
+                        </div>
                 </Accordion.Body>
             </Accordion.Item>
             <Accordion.Item eventKey='1'>
-                <Accordion.Header className='accordion_header'>회의실 사이드바 아이콘</Accordion.Header>
-                <Accordion.Body className='accordion_body'>
-                    <div className='table-container'>
+                <Accordion.Header className='accordion_table_header'>회의실 사이드바 아이콘</Accordion.Header>
+                <Accordion.Body className='accordion_table_body'>
                         <Table className='feature_table' striped bordered hover>
                             <thead>
                                 <tr>
@@ -177,7 +176,6 @@ function FeatureExplain() {
                                 </tr>
                             </tbody>
                         </Table>
-                    </div>
                 </Accordion.Body>
             </Accordion.Item>
         </Accordion>

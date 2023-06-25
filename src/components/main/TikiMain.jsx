@@ -15,7 +15,7 @@ function TikiMain() {
                     <div className="vb_bg pc"></div>
                     <div className="vb_bg pc">
                         <p className="wording_txt">
-                            <span>{displayedText}</span>
+                            <span className="moving_txt">{displayedText}</span>
                             <br />
                             언제 어디에서나
                             <br />
@@ -36,7 +36,6 @@ function TikiMain() {
                                     어떤 언어로 대화해도, AI번역을 통해 자동으로 통역해줍니다.
                                 </dd>
                             </dl>
-                            <br className="mob" />
                             <dl className="vb_s2">
                                 <dt>
                                     <span className="font_blue">02</span>
