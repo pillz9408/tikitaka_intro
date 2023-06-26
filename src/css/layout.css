@@ -491,7 +491,7 @@ li:hover .dropdown-menu {
 	text-align: center;
 	table-layout: fixed;
 	overflow-x: auto;
-	width: 100%;
+	width: 1250px;
 	max-width: 100%;
 	white-space: nowrap;
 	width: max-content;
@@ -509,9 +509,13 @@ li:hover .dropdown-menu {
 .feature_table .intro_tag {
 	width: 200px;
 }
+.feature_table .detail {
+	width: 400px;
+}
+
 
 .feature_table .upper_img_th {
-	max-width: 100%;
+	width: 400px
 }
 
 .feature_table td,

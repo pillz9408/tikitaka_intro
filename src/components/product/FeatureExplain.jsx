@@ -13,8 +13,8 @@ function FeatureExplain() {
                                 <tr>
                                     <th className='num_tag'>#</th>
                                     <th className='upper_img_th'>이미지</th>
-                                    <th>설명</th>
-                                    <th>사용방법</th>
+                                    <th className='intro_tag'>설명</th>
+                                    <th className='detail'>사용방법</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -86,7 +86,7 @@ function FeatureExplain() {
                                     <th className='num_tag'>#</th>
                                     <th className='btn_tag'>아이콘</th>
                                     <th className='intro_tag'>설명</th>
-                                    <th>사용방법</th>
+                                    <th className='detail'>사용방법</th>
                                 </tr>
                             </thead>
                             <tbody>
