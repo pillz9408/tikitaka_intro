@@ -14,7 +14,7 @@ import './css/base.css';
 import './css/layout.css';
 import './css/bootstrap.min.css';
 //responsive
-import { Pc, Mobile } from 'components/view';
+import { Pc, Mobile, Tablet } from 'components/view';
 import MobileHead from 'components/MobileHeader';
 
 function App() {
@@ -45,6 +45,18 @@ function App() {
           <Route path="/qna" element={<QnAPage />} />
         </Routes>
       </Mobile>
+      <Tablet>
+      <MobileHead></MobileHead>
+        <Routes>
+          <Route exact path="/" element={<TikiMain />} />
+          <Route path="/company" element={<OrangePixel />} />
+          <Route path="/company/orangepixel" element={<OrangePixel />} />
+          <Route path="/company/thebrains" element={<TheBrains />} />
+          <Route path="/product" element={<TikiProduct />} />
+          <Route path="/cost" element={<TikiCost />} />
+          <Route path="/qna" element={<QnAPage />} />
+        </Routes>
+      </Tablet>
       <TikiFooter></TikiFooter>
     </div>
   )

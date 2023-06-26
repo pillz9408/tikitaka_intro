@@ -35,7 +35,7 @@ a:link, a:visited, a:hover, a:active {text-decoration: none;}
 .blind {position: absolute; left: -9999px; top: -9999px;}
 .skip {position: absolute; left: -9999px; top: -9999px;}
 
-body {font-family: 'gsb'; font-size: 16px;}
+body {font-family: 'gsb'; font-size: 62.5;}
 button, textarea {font-family: 'gsm';}
 button {cursor: pointer;}
 
