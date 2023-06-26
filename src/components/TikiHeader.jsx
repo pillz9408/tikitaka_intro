@@ -25,7 +25,7 @@ function TikiHeader() {
         <div className="header">
             <div className="logo">
                 <Link to="/" className="w">
-                    <img src="/img/TIki.png" alt="로고1" />
+                    <img src="/img/Tiki.png" alt="로고1" />
                 </Link>
             </div>
             <div className="inner">
