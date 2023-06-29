@@ -3,7 +3,7 @@ import { useMediaQuery } from "react-responsive"
 
 export const Pc = ({ children }) => {
   const isPc = useMediaQuery({
-    query: "(min-width:1401px)"
+    query: "(min-width:1025px)"
   });
   return <>{isPc && children}</>
 }
