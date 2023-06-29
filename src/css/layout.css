@@ -3,10 +3,10 @@
 
 
 :root {
-	--font-size-point: max(3rem, min(4vw, 3.5rem));
-	--font-size-xl: max(2.5rem, min(3vw, 2.5rem));
-	--font-size-lg: max(2rem, min(2vw, 2rem));
-	--font-size-nav: max(1.7rem, min(1.8vw, 1.8rem));
+	--font-size-point: max(3rem, min(4vw, 4rem));
+	--font-size-xl: max(2.5rem, min(3vw, 3rem));
+	--font-size-lg: max(2rem, min(2vw, 2.5rem));
+	--font-size-nav: max(1.5rem, min(1.8vw, 1.8rem));
 	--font-size-base: max(1rem, min(1vw, 1.5rem));
 	--font-size-sm: max(0.9rem, min(0.8vw, 1.5rem));
 	--font-size-xs: max(0.85rem, min(0.6vw, 1.5rem));
@@ -84,12 +84,12 @@ body {
 }
 
 .header .gnb ul li+li {
-	margin-left: 1rem;
+	margin-left: 1.5rem;
 }
 
 .header .gnb ul li a {
 	color: #666;
-	font-size: var(--font-size-xl);
+	font-size: var(--font-size-lg);
 	font-weight: 700;
 	letter-spacing: -0.25px;
 }
@@ -122,7 +122,7 @@ padding-bottom: 3px !important; */
 
 .inner .gnb .dropdown-menu li a {
 	font-family: 'gsb';
-	font-size: var(--font-size-nav);
+	font-size: var(--font-size-base);
 	color: #0c0c0c;
 }
 
@@ -140,7 +140,7 @@ li:hover .dropdown-menu {
 .wrapper {
 	position: relative;
 	width: 100%;
-	padding-bottom: 100vh;
+	padding-bottom: 80vh;
 	/* 푸터의 높이에 맞게 조정하세요 */
 }
 
@@ -218,13 +218,13 @@ li:hover .dropdown-menu {
 }
 
 .footer .logo .w img {
-	width: 250px;
+	width: 180px;
 	height: auto;
 	float: left;
 }
 
 .footer .logo .and_img img {
-	width: 47px;
+	width: 35px;
 	height: auto;
 	float: left;
 	margin-left: 10px;
@@ -235,7 +235,7 @@ li:hover .dropdown-menu {
 
 
 .footer .logo .m img {
-	width: 200px;
+	width: 150px;
 	height: auto;
 	float: left;
 }
@@ -322,7 +322,7 @@ li:hover .dropdown-menu {
 	width: auto !important;
 	height: auto;
 	max-width: 100%;
-	max-height: 80vh;
+	max-height: 60vh;
 	object-fit: cover;
 	object-position: left;
 	display: block;
@@ -386,6 +386,7 @@ li:hover .dropdown-menu {
 .vb .vb_txt dl dt {
 	font-size: var(--font-size-base);
 	font-weight: bold;
+	text-align: left;
 }
 
 .vb .vb_txt dl dt span {
@@ -395,10 +396,10 @@ li:hover .dropdown-menu {
 }
 
 .vb .vb_txt dl dd {
-	margin-top: 2%;
+	margin-top: 3%;
 	font-size: var(--font-size-base);
 	line-height: 1.7;
-	padding: 1rem;
+	padding: 2rem;
 	box-sizing: border-box;
 	width: 100%;
 	background: #fff;
@@ -588,7 +589,7 @@ li:hover .dropdown-menu {
 	/*Footer*/
 	.wrapper {
 		position: relative;
-		min-height: 100vh;
+		min-height: 30vh;
 		width: 100%;
 	}
 
@@ -886,8 +887,8 @@ li:hover .dropdown-menu {
 
 	/*Footer*/
 	.wrapper {
-		position: relative;
-		min-height: 100vh;
+		position: absolute;
+		min-height: 30vh;
 		width: 100%;
 	}
 
