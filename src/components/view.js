@@ -3,14 +3,14 @@ import { useMediaQuery } from "react-responsive"
 
 export const Pc = ({ children }) => {
   const isPc = useMediaQuery({
-    query: "(min-width:1025px)"
+    query: "(min-width:1304px)"
   });
   return <>{isPc && children}</>
 }
 
 export const Tablet = ({ children }) => {
   const isTablet = useMediaQuery({
-    minWidth: 769, maxWidth: 1024
+    minWidth: 769, maxWidth: 1303
   });
   return <>{isTablet && children}</>
 }

@@ -95,10 +95,6 @@ body {
 }
 
 .header .gnb .active {
-	/* text-decoration: underline;
-text-decoration-thickness: 3px;
-text-decoration-color:#1254ff;
-padding-bottom: 3px !important; */
 	color: #1254ff;
 
 
@@ -140,7 +136,7 @@ li:hover .dropdown-menu {
 .wrapper {
 	position: relative;
 	width: 100%;
-	padding-bottom: 80vh;
+	padding-bottom: 50vh;
 	/* 푸터의 높이에 맞게 조정하세요 */
 }
 
@@ -589,7 +585,7 @@ li:hover .dropdown-menu {
 	/*Footer*/
 	.wrapper {
 		position: relative;
-		min-height: 30vh;
+		min-height: 10vh;
 		width: 100%;
 	}
 
@@ -829,7 +825,7 @@ li:hover .dropdown-menu {
 }
 
 /* Tablet */
-@media (min-width: 769px) and (max-width:1024px) {
+@media (min-width: 769px) and (max-width:1303px) {
 
 	html,
 	body {
@@ -888,7 +884,7 @@ li:hover .dropdown-menu {
 	/*Footer*/
 	.wrapper {
 		position: absolute;
-		min-height: 30vh;
+		min-height: 10vh;
 		width: 100%;
 	}
 
@@ -917,7 +913,7 @@ li:hover .dropdown-menu {
 	.footer .inner {
 		position: relative;
 		width: 100%;
-		margin: 0 auto;
+		margin: 10 auto;
 		padding: 2vh 2vw;
 		display: flex;
 	}
@@ -930,7 +926,7 @@ li:hover .dropdown-menu {
 
 	.footer .info {
 		float: left;
-		padding-top: 5%;
+		padding-top: 2%;
 		color: #ffffff;
 		font-size: var(--font-size-base);
 		line-height: 15px;
