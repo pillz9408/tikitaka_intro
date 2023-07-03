@@ -819,9 +819,10 @@ li:hover .dropdown-menu {
 		position: center;
 		padding: 5px 5px 5px 5px;
 	}
-
+	/*PC용 이미지 숨김 처리*/
 	.vb .product_intro_img,
-	.vb .company_intro_img {
+	.vb .company_intro_img,
+	.vb .cost_img {
 		display: none;
 	}
 
@@ -835,7 +836,27 @@ li:hover .dropdown-menu {
 		display: block;
 		margin: 0 auto;
 	}
+	.cost_txt{
+		text-align: left;
+		display: block;
+		padding: 20px 20px 20px 20px;
+		width: 100vw;
+	}
 
+	.cost_txt .cost_txt_head{
+		font-family: 'gsb';
+		font-size: var(--font-size-nav);
+	}
+	.cost_txt .cost_txt_title{
+		font-family: 'gsm';
+		font-weight: 800;
+		font-size: var(--font-size-base);
+	}
+	.cost_txt .cost_txt_body{
+		font-family: 'gsm';
+		font-size: var(--font-size-base);
+	}
+	
 }
 
 /* Tablet */
