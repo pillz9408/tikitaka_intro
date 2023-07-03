@@ -239,7 +239,7 @@ li:hover .dropdown-menu {
 
 /* Main */
 .mob {
-	display: none !important;
+	display: none;
 }
 
 .wrap {
@@ -451,6 +451,10 @@ li:hover .dropdown-menu {
 	overflow-x: auto;
 	min-width: 900px;
 }
+.accordion_mobile_txt {
+	font-family: 'Noto Sans KR';
+	font-size: var(--font-size-xs);
+}
 
 .accordion_table .accordion_table_header {
 	font-family: 'gsb';
@@ -529,7 +533,7 @@ li:hover .dropdown-menu {
 	}
 
 	.mob {
-		display: "";
+		display: flex;
 	}
 
 	/*Header*/
@@ -813,7 +817,7 @@ li:hover .dropdown-menu {
 		position: center;
 		padding: 5px 5px 5px 5px;
 	}
-
+	
 }
 
 /* Tablet */
@@ -828,7 +832,7 @@ li:hover .dropdown-menu {
 	}
 
 	.mob {
-		display: "";
+		display: flex;
 	}
 
 	/*Header*/
