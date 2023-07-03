@@ -18,6 +18,8 @@ function TikiProduct() {
               <img className="product_intro_img" alt="제품 소개 이미지" src="img/Product/tiki_intro.png" /><br />
               <img className="product_intro_img" alt="제품 소개 이미지" src="img/Product/tiki_intro2.png" /><br />
               <img className="product_intro_img" alt="제품 소개 이미지" src="img/Product/tiki_intro3.png" /><br />
+              <div className="mob"><img className="m_product" src="img/Product/m_product1.png"/></div>
+              <div className="mob"><img className="m_product" src="img/Product/m_product2.png"/></div>
               
               <h4 className='subtitle'>1. 화상회의방 입장 방법</h4>
               <HowToJoin></HowToJoin>

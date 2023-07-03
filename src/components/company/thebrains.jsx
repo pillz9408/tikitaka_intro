@@ -13,6 +13,8 @@ function TheBrains() {
                             </p>
                             <div><img className="company_intro_img" src="\img\Company\thebrains_intro1.png"/></div>
                             <div><img className="company_intro_img" src="\img\Company\thebrains_intro2.png"/></div>
+                            <div className="mob"><img className="m_company_img" src="\img\Company\thebrains_intro1.png" /></div>
+                            <div className="mob"><img className="m_company_img" src="\img\Company\m_tbrs2.png" /></div>
                         </div>
                     </div>
                 </section>

@@ -13,6 +13,7 @@ function OrangePixel() {
                                 <strong>(주) 오렌지 픽셀</strong>
                             </p>
                             <div><img className="company_intro_img" src="/img/Company/company_intro_orange.png" /></div>
+                            <div className="mob"><img className="m_company_img" src="/img/Company/m_orange.png"/></div>
                         </div>
                     </div>
                 </section>

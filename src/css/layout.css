@@ -244,7 +244,7 @@ li:hover .dropdown-menu {
 
 .wrap {
 	max-width: 1920px;
-    margin: auto auto;
+	margin: auto auto;
 	/* min-height: 100vh; */
 }
 
@@ -451,6 +451,7 @@ li:hover .dropdown-menu {
 	overflow-x: auto;
 	min-width: 900px;
 }
+
 .accordion_mobile_txt {
 	font-family: 'Noto Sans KR';
 	font-size: var(--font-size-xs);
@@ -502,6 +503,7 @@ li:hover .dropdown-menu {
 .feature_table .intro_tag {
 	width: 200px;
 }
+
 .feature_table .detail {
 	width: 400px;
 }
@@ -817,7 +819,23 @@ li:hover .dropdown-menu {
 		position: center;
 		padding: 5px 5px 5px 5px;
 	}
-	
+
+	.vb .product_intro_img,
+	.vb .company_intro_img {
+		display: none;
+	}
+
+	.vb .m_company_img,
+	.vb .m_product {
+		width: auto !important;
+		height: auto;
+		max-width: 100%;
+		object-fit: cover;
+		object-position: left;
+		display: block;
+		margin: 0 auto;
+	}
+
 }
 
 /* Tablet */
@@ -829,10 +847,6 @@ li:hover .dropdown-menu {
 		padding: 0;
 		width: 100%;
 		height: 100%;
-	}
-
-	.mob {
-		display: flex;
 	}
 
 	/*Header*/
@@ -1116,5 +1130,4 @@ li:hover .dropdown-menu {
 		position: center;
 		padding: 5px 5px 5px 5px;
 	}
-
 }
